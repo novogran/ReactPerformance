@@ -3,9 +3,18 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --text-color: #343d46;
+  --background-color: #c0c5ce;
+  --background-button-color: #4f5b66;
+  --background-button-color-hover: #a7adba;
+  --background-dialog-color: #c0c5cedc;
+  --box-shadow-color: #65737e;
+  --mute-sound-filter: brightness(0) saturate(100%) invert(19%) sepia(35%)
+    saturate(322%) hue-rotate(168deg) brightness(92%) contrast(84%);
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--background-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
