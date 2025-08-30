@@ -1,0 +1,15 @@
+export const availableColumns = [
+  'year',
+  'iso_code',
+  'co2',
+  'co2_per_capita',
+  'methane',
+  'oil_co2',
+  'gas_co2',
+  'cement_co2',
+  'flaring_co2',
+  'other_co2',
+  'temperature_change_from_co2',
+  'energy_per_capita',
+  'energy_per_gdp',
+];
