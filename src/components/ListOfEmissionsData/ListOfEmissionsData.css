@@ -1,0 +1,136 @@
+.list-container {
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--box-shadow-color);
+  border-radius: 8px;
+  background: var(--background-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.list-header {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(
+    135deg,
+    var(--background-button-color) 0%,
+    var(--box-shadow-color) 100%
+  );
+  padding: 1rem 0;
+  color: var(--background-dialog-color);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.list-header-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.list-header-item {
+  flex: 1;
+  margin: 0 0.5rem;
+}
+
+.sortable:hover {
+  border-radius: 8px;
+  color: var(--text-color);
+}
+
+.list-header-zip {
+  width: 2.5rem;
+  text-align: center;
+}
+
+.list-scroll-placeholder {
+  flex-shrink: 1;
+}
+
+.list-content {
+  overflow: hidden;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.list-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.list-content::-webkit-scrollbar-track {
+  background: var(--background-button-color);
+  border-radius: 4px;
+}
+
+.list-content::-webkit-scrollbar-thumb {
+  background: var(--box-shadow-color);
+  border-radius: 4px;
+}
+
+.list-content::-webkit-scrollbar-thumb:hover {
+  background: var(--background-button-color-hover);
+}
+
+.controls-section {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: linear-gradient(
+    135deg,
+    var(--background-button-color) 0%,
+    var(--box-shadow-color) 100%
+  );
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.control-group label {
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.control-group select,
+.control-group input {
+  padding: 0.5rem;
+  border: 1px solid var(--box-shadow-color);
+  border-radius: 4px;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+.columns-button {
+  padding: 0.5rem 1rem;
+  background: var(--background-dialog-color);
+  color: var(--text-color);
+  border: 1px solid var(--box-shadow-color);
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.columns-button:hover {
+  background: var(--background-button-color-hover);
+}
+
+.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.sortable:hover {
+  background: var(--background-button-color-hover);
+}

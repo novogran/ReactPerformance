@@ -1,0 +1,44 @@
+.row-component {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--box-shadow-color);
+  transition: background-color 0.2s ease;
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+.row-item {
+  flex: 1;
+  padding: 0 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row-iso {
+  width: 2.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-align: center;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  background-color: var(--background-button-color);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  color: var(--background-color);
+}
+
+.highlight {
+  animation: highlight-fade 1s ease-out;
+}
+
+@keyframes highlight-fade {
+  0% {
+    background-color: var(--background-button-color-hover);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
